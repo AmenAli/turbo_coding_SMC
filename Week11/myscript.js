@@ -1,10 +1,8 @@
 var modelCat = ["young", "mature", "famous"];
 var outfitCat = ["dress", "pants"];
 var locationCat = ["indoor", "outdoor"];
-
 var groupSelect = document.getElementById("group");
 var categorySelect = document.getElementById("category");
-
 groupSelect.addEventListener("change", function () {
   console.log(groupSelect.value);
   if (groupSelect.value == "models") {
@@ -17,7 +15,6 @@ groupSelect.addEventListener("change", function () {
     fillCategory(locationCat);
   }
 });
-
 var fillCategory = function (selection) {
   categorySelect.innerHTML = "";
   selection.forEach((element) => {
@@ -29,9 +26,7 @@ var fillCategory = function (selection) {
   });
 };
 var myImgs = ["5th.png", "2nd.jpg", "3rd.png", "4th.jpg"];
-
 var image1Pic = document.getElementById("image1Pic");
-
 function clickHandler() {
   if (groupSelect.value == "models" && categorySelect.value == "young") {
     myImgs = ["5th.png", "2nd.jpg", "3rd.png", "4th.jpg"];
@@ -102,12 +97,9 @@ function clickHandler() {
     document.getElementById("image4Pic").src = myImgs[3];
   }
 }
-
 var currentImg = 0;
 var carouselImg = document.getElementById("carouselImg");
-
 window.setInterval(imageGallery, 5000);
-
 function imageGallery() {
   var nextImg = currentImg + 1;
   if (nextImg == myImgs.length) nextImg = 0;

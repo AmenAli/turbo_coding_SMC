@@ -2,7 +2,6 @@ let header = document.getElementById("myHeader");
     let clrBTN = document.getElementById("colorBTN");
     let myImg = document.getElementById("myImg");
     let tgglBTN = document.getElementById("toggleBTN");
-
     function changeTheColor() {
       // WE'LL DO SOME COLOR CHANGING HERE
       let redComp = Math.random() * 255;
@@ -11,14 +10,11 @@ let header = document.getElementById("myHeader");
       console.log("RED: " + redComp);
       console.log("GREEN: " + greenComp);
       console.log("BLUE: " + blueComp);
-
       header.style.backgroundColor =
         "rgb(" + redComp + ", " + greenComp + ", " + blueComp + ")";
     }
-
     let toggleTheImage = function () {
-      // WE'LL DO SOME IMAGE TOGGLING HERE
-
+      // DO SOME IMAGE TOGGLING HERE
       if (tgglBTN.innerText === "Show the second one!") {
         console.log("show the second image");
         myImg.src = "2nd.jpg";
