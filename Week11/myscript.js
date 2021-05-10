@@ -25,11 +25,11 @@ var fillCategory = function (selection) {
     categorySelect.appendChild(opt);
   });
 };
-var myImgs = ["5th.png", "2nd.jpg", "3rd.png", "4th.jpg"];
+var myImgs = ["5th.jpg", "2nd.jpg", "3rd.jpg", "4th.jpg"];
 var image1Pic = document.getElementById("image1Pic");
 function clickHandler() {
   if (groupSelect.value == "models" && categorySelect.value == "young") {
-    myImgs = ["5th.png", "2nd.jpg", "3rd.png", "4th.jpg"];
+    myImgs = ["5th.jpg", "2nd.jpg", "3rd.jpg", "4th.jpg"];
     // young models
     document.getElementById("image1Pic").src = myImgs[0];
     document.getElementById("image2Pic").src = myImgs[1];
