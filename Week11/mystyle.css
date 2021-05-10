@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+    background-image: linear-gradient(
+      to bottom left,
+      rgb(117, 80, 31),
+      rgb(247, 247, 245)
+    );
+  }
+
+  header {
+    height: 20px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+  }
+
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #carousel {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    text-align: center;
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(175, 110, 49),
+      rgb(247, 247, 245)
+    );
+    /*    background-color: rgb(199, 134, 13); */
+    margin-top: 20px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    header {
+      height: 40px;
+    }
+  }
