@@ -1,5 +1,5 @@
 body {
-    margin: 0px;
+    margin: 8px;
     background-image: linear-gradient(
       to bottom left,
       rgb(117, 80, 31),
@@ -39,7 +39,7 @@ body {
       rgb(247, 247, 245)
     );
     /*    background-color: rgb(199, 134, 13); */
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   @media only screen and (max-width: 768px) {
